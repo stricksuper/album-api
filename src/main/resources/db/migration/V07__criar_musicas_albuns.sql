@@ -6,3 +6,9 @@ CREATE TABLE musicas_albuns (
   foreign key(id_musica) references musicas(id),
   foreign key(id_album) references albuns(id)
 ) engine=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO musicas_albuns (id_album, id_musica)
+VALUES (1, 1);
+INSERT INTO musicas_albuns (id_album, id_musica)
+VALUES (2, 2);

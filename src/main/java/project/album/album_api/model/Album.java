@@ -13,9 +13,7 @@ public class Album {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-    @NotEmpty
 	private String nome;
-    @NotEmpty
 	private Integer ano;
 	
     @ManyToMany(mappedBy = "albuns_teste")

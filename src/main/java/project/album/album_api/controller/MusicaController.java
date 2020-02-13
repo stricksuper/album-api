@@ -37,4 +37,16 @@ public class MusicaController {
                              .body(musicaSalva );
     }
     
+    @GetMapping("/{id}")
+    public Musica buscaPor(@PathVariable Integer id) {
+        return musicaService.buscaPor(id);
+    }
+    
+    
+    @PutMapping("/{id}")
+    public ResponseEntity<Musica> atualiza(@PathVariable Integer id, @Validated @RequestBody Musica musica ) {
+        Musica musicaManager = musicaService.atualiza(id, musica );
+        return ResponseEntity.ok(musicaManager );
+    }
+    
 }
