@@ -57,8 +57,8 @@ public class Musica {
 
 
 
-	public Set<Album> getAlbuns() {
-		return albuns;
+	public String getAlbuns() {
+		return albuns.toString();
 	}
 
 
