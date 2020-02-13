@@ -49,5 +49,9 @@ public class AlbumService {
 	    public Album buscaPor(Integer id) {
 	        return genericoService.buscaPor(id );
 	    }
+	    @Transactional
+	    public void excluiPor(Integer id) {
+	        genericoService.excluirPor(id );
+	    }
 
 }

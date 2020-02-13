@@ -49,4 +49,10 @@ public class MusicaController {
         return ResponseEntity.ok(musicaManager );
     }
     
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void exclui(@PathVariable Integer id) {
+        musicaService.excluiPor(id);
+    }
+    
 }

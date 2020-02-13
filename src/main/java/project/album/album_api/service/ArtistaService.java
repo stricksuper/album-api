@@ -57,5 +57,9 @@ public class ArtistaService {
 	    public Artista buscaPor(Integer id) {
 	        return genericoService.buscaPor(id );
 	    }
+	    @Transactional
+	    public void excluiPor(Integer id) {
+	        genericoService.excluirPor(id );
+	    }
 
 }
